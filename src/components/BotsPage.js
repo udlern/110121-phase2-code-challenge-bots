@@ -2,7 +2,7 @@ import React from "react";
 import YourBotArmy from "./YourBotArmy";
 import BotCollection from "./BotCollection";
 
-function BotsPage({ bots, addBot, removeBot, removeBotForever }) {
+function BotsPage({ bots, addBot, removeBot, removeBotForever, clickOnBot }) {
   return (
     <div>
       <YourBotArmy
@@ -14,6 +14,7 @@ function BotsPage({ bots, addBot, removeBot, removeBotForever }) {
         removeBotForever={removeBotForever}
         bots={bots}
         addBot={addBot}
+        clickOnBot={clickOnBot}
       />
     </div>
   );

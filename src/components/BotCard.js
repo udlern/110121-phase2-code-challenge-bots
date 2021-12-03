@@ -1,4 +1,5 @@
 import React from "react";
+import BotSpecs from "./BotSpecs";
 
 const botTypeClasses = {
   Assault: "icon military",
@@ -9,7 +10,7 @@ const botTypeClasses = {
   Captain: "icon star",
 };
 
-function BotCard({ bot, handleClick, handleClickRemove }) {
+function BotCard({ bot, handleClick, handleClickRemove, handleClickBot }) {
   return (
     <div className="ui column">
       <div className="ui card" key={bot.id} onClick={() => handleClick(bot)}>
@@ -49,6 +50,15 @@ function BotCard({ bot, handleClick, handleClickRemove }) {
                 }}
               >
                 x
+              </button>
+              <button
+                className="ui mini red button"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  handleClickBot(bot);
+                }}
+              >
+                View Specs
               </button>
             </div>
           </span>
