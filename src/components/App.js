@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import BotCard from "./BotCard";
 import BotsPage from "./BotsPage";
 import BotSpecs from "./BotSpecs";
 

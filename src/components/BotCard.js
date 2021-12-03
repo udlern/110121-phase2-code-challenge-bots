@@ -1,5 +1,4 @@
 import React from "react";
-import BotSpecs from "./BotSpecs";
 
 const botTypeClasses = {
   Assault: "icon military",
